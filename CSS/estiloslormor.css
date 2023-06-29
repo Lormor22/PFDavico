@@ -1,0 +1,288 @@
+/* Limpiamos los estilos por default que vienen en css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografia general */
+/* Declaro nombre y link de donde esta */
+@font-face {
+    font-family: "roboto_regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: "roboto_black";
+    src: url(../fonts/Roboto-BlackItalic.ttf);
+}
+/* body genral tipografia y color */
+body{
+    font-family: "roboto_regular";
+    background-color: #041124;
+    color: #a9bfb1;  
+}
+#index_fijo{
+        /* para que la barra nos siga mientras bajamos, solo en el index */
+        position:fixed;
+        /* para sobreponer sobre todo */
+        z-index: 2;
+}
+header{
+    background-color: black;
+    width: 100%;
+
+}
+/* marco con color cada boton para que se sepa en que pagina se está */
+#estoy_aca{
+    background-color: #a9bfb1;
+    color: black;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+h1{
+    font-family: "roboto_black";
+    font-size: 50px;
+}
+h1 a{
+    /* eliminar el "modo link" del texto */
+    text-decoration: none;
+    color: rgb(127, 182, 230);
+}
+
+/* Acomodar el menu */
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* para hacer el menu una etiqueta de bloque */
+header nav ul li{
+    display: inline-block;
+    font-size: 20px;
+
+}
+header div,
+header nav{
+    display: inline-block;
+}
+
+.lormor_logo {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.menu_boton {
+    margin-right: 15px;
+}
+
+
+/* Boton quien es lormor */
+.quien_lormor{
+    background-color: rgb(0, 0, 0);
+    width: 230px;
+    padding: 15px;
+    border-radius: 4em;
+    z-index: 1;
+    font-size: 25px;
+    
+    
+}
+.quien_lormor a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.hero{
+    background-image: url(../img/fondolormor2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+
+}
+
+/* presentacion de persona */
+/* Aca lo que hice es darle un ancho maximo al contenedor de texto y puse fit content para
+que tomase el ancho del body y no de la pantalla */
+
+.astro_div{
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.avatar_logo{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.texto_index{
+    font-size: 25px;
+    width: 500px;
+    display: inline-block;
+    background-color: #c2bcc5;
+    color: black;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+
+
+/* footer */
+
+footer{
+    background-color: black;
+    padding-top: 50px;
+    text-align: left;
+
+}
+
+footer a{
+
+    color: aliceblue;
+    width: auto;
+    width: 50px;
+    height: 50px;
+
+
+    
+
+}
+footer section h6{
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: black;
+
+}
+
+footer section a img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    display: inline-block;
+}
+.footer_links a{
+    margin: 10px;
+}
+.footer_links{
+    text-align: right;
+    margin-right: 50px;
+}
+
+
+/* Diseño general de las páginas y post de imagenes*/
+/* Imagen de fondo banner titulo  */
+.contenedor_t_principal_disenio{
+    background-image: url(../img/diseñoback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+.contenedor_t_principal_animacion{
+    background-image: url(../img/animacback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+.contenedor_t_principal_dibujo{
+    background-image: url(../img/dibuback.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+.contenedor_t_principal_contacto{
+    background-image: url(../img/contactoback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+
+
+/* Diseño titulo pagina */
+.titulo_principal{
+    font-size: 200px;
+    text-align: center;
+    padding: 20px;
+    -webkit-text-fill-color: #c2bcc5;
+    -webkit-text-stroke: 3px black;
+}
+
+/* Titulo del post / imagenes / texto */
+
+.div_presentador{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 150px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+
+}
+
+.img_presentador{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.titulo_presentador{
+    font-size: 25px;
+    display: inline-block;
+    background-color: #c2bcc5;
+    color: black;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.contenedor_post{
+    width: 60%;
+    text-align: center; 
+    margin: auto;
+
+}
+.texto_post{
+    font-size: 25px;
+    margin: 50px;
+    background-color: #c2bcc5;
+    color: black;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.div_imagen{
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.imagen_post{
+    width: 1400px;
+    height: 680px;
+}
+
+.en_construccion{
+    margin-top: 200px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.contacto_{
+margin: 20px;
+}
+
+.texto_adv{
+    font-size: 14px;
+    margin: 50px;
+    background-color: #c2bcc5;
+    color: black;
+    border-radius: 25px;
+    padding: 10px;
+}

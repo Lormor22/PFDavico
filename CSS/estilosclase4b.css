@@ -1,0 +1,33 @@
+.caja { 
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    /* por defecto esta visible, hidden oculta lo que este afuera de la caja, scroll pone 
+    un scroll en la caja, auto para generar scroll por defecto*/
+/*     overflow: auto;*/
+
+/* Relleno al contenido interno */
+/* Podes agregar todos los datos por separado, top, right, bottom y left
+Ej: padding: 40px 20px 30px 10px; */
+    padding: 5px;
+    /* Limita la caja al tamaño que yo defini, ignora lo que tiene dentro */
+    /* box-sizing: border-box; */
+
+    /* datos: Grosor de linea, si es solido o puntuado (double, dotted, solid) y color */
+    border: 8px solid black;
+    border-top: 5px dotted rgb(34, 33, 33);
+    border-radius: 30px;
+
+    /* margin es el elemento de afuera */
+    margin: 0 0 10px 10px;
+    display: inline-block;
+    /* Position es para superponer objetos entre si, declaras a cuanto px de cada lado
+    position absolute queda fijo con respecto al contenedor padre */
+}
+
+section{
+
+    position: relative;
+    height: 300px;
+}
+

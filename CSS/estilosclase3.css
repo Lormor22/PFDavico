@@ -1,0 +1,66 @@
+/*header*/
+/* reinicia todos los estilos que vienen por defecto */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Modifica todos los h1 */
+/* h1{
+color: red;
+
+} */
+/* IDs */
+#logo{
+
+    background-color: peru;
+}
+/* las class inician con . */
+.lista a{
+
+    color: green;
+}
+
+ul li {
+    color: rgb(116, 43, 43);
+    /* Saca los puntitos a la lista */
+    list-style-type: none;
+    list-style-image: url(../img/favicon.png);
+}
+ul li a{
+    text-decoration: none;
+}
+
+
+/* Los ID tienen mas especifidad que las class
+ID > Class > etiqueta (h1) */
+#logo {
+    color: rgb(0, 0, 10);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+p{
+    font-size: 40px;
+    font-weight: 800px;
+    text-align: center;
+}
+main{
+    /* VH (viwe hight, lo que se ve en la pantalla) */
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    background-image: url(../img/design.jpg);
+    /* Para que no se repita la imagen,que cubra todo y que este centrada */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Imagen fija y solo se mueve el menu */
+    background-attachment: fixed;
+}
+
+footer p{
+    text-align: left;
+    background-color: rgb(37, 34, 34);
+}

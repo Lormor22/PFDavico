@@ -1,0 +1,25 @@
+
+
+/* Declaro el nombre de la fuente y agrego donde esta ubicada */
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+/* Declaro por medio de link de donde viene la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@100;300;500&display=swap');
+
+
+
+
+/* Declaro que duente usa */
+h1{
+font-family: "roboto";
+
+}
+
+/* Pego directamente de la pagina el codigo */
+h2{
+
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
