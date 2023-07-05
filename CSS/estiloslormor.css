@@ -15,6 +15,10 @@ html{
     src: url(../fonts/Roboto-Regular.ttf);
     font-family: "roboto_black";
     src: url(../fonts/Roboto-BlackItalic.ttf);
+    font-family: "soul_big";
+    src: url(../fonts/Soulgood.ttf);
+    font-family: "valorant";
+    src: url(../fonts/Valorant\ Font.ttf);
 }
 /* body genral tipografia y color */
 body{
@@ -37,13 +41,14 @@ header{
 }
 
 h1{
-    font-family: "roboto_black";
+    font-family: "valorant";
     font-size: 50px;
+
 }
 h1 a{
     /* eliminar el "modo link" del texto */
     text-decoration: none;
-    color: rgb(127, 182, 230);
+    color: white;
 }
 
 /* Acomodar el menu */
@@ -71,6 +76,12 @@ header nav{
 
 .menu_boton {
     margin-right: 15px;
+}
+.menu_boton:hover{
+    filter: drop-shadow(0px 0px 10px cyan);
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
 }
 
 
@@ -319,44 +330,7 @@ margin: 20px;
 }
 
 /* pagina del lol */
-.main_lol{
-    display: grid;
-    grid-template-areas: 
-    "img_grid img_grid nombre_lol nombre_lol"
-    "img_grid img_grid nombre_lol nombre_lol"
-    "img_grid img_grid leyenda_lol leyenda_lol"
-    "img_grid img_grid texto_lol texto_lol"
-    "img_grid img_grid texto_lol botones"
-    ;
-
-}
-
-.imagen_lol{
-    grid-area: img_grid;
-    background-color: red;
-}
-.nombre_lol{
-    grid-area: nombre_lol;
-    background-color: green;
-}
-.leyenda_lol{
-    grid-area: leyenda_lol;
-    background-color: blue;
-}
-.texto_lol{
-    grid-area: texto_lol;
-    background-color: yellow;
-}
-.botones_guias{
-    grid-area: botones;
-    background-color: #2a3249;
-}
-
-
-
-
-
-
+/* Seleccion de rol */
 .div_banner{
     display: flex;
     justify-content: center;
@@ -387,7 +361,7 @@ margin: 20px;
     height: 100vh;
 
 }
-
+/* Separador */
 .linea_gris{
     width: 80%;
     height: 2px;
@@ -400,12 +374,140 @@ margin: 20px;
     display: flex;
     justify-content: center;
 }
+.div_linea h2{
+    font-family: "soul_big";
+    font-size: 150px;
+    margin-bottom: 100px;
 
-.tresh{
+}
+
+/* Champion 1 #Thresh */
+.div_lol{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 200px;
+
+}
+.thresh_banner_lol{
+    grid-column: 1/6;
+    background-color: green;
+    height: 200px;
+    margin-bottom: 80px;
+    background-image: url(../img/lol/banner_thresh.png);
+    align-self: center;
+    background-position: center;
+    background-size: cover;
+    margin-right: -10%;
+    margin-left: -10%;
+}
+.thresh_lol{
+    grid-column: 1/3;
+    grid-row: 2/6;
+    background-image: url(../img/lol/thresh.jpg);
+    height: 700px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
     margin: 25px;
     filter: drop-shadow(0px 0px 10px cyan);
     border-radius: 8px;
+}
+.nombre_lol{
+    grid-column: 4/6;
+    font-family: "soul_big";
+    justify-self: end;
+    align-self: end;
+}
+.nombre_lol h2{
+    font-size: 150px;
+}
+.nombre_lol h4{
+    font-family: "roboto_regular";    
+    text-align: end;
+}
 
+.texto_lol{
+    grid-column: 3/6;
+    grid-row: 3/5;
+    font-size: 20px;
+}
+.botones_guias{
+    grid-column: 5/6;
+
+}
+ /* Botones de guias */
+.opgg{
+    width: 150px;
+    height: 60px;
+}
+.opgg:hover{
+    filter: drop-shadow(0px 0px 10px cyan);
+    border-radius: 8px;
+}
+.graphs:hover{
+    filter: drop-shadow(0px 0px 10px cyan);
+    border-radius: 8px;
+}
+.skills_lol{
+    grid-column: 3/5;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 20px;
+    height: 50px;
+    
+}
+.skills_lol div{
+    position:relative;
+    display: inline-block;
+    text-align: end;
+}
+.skills_lol img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    filter: drop-shadow(0px 0px 10px rgb(44, 43, 44));
+    border-radius: 8px;
+
+}
+.skills_lol h4{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #2a3249;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Champion 2 Renata */
+.renata_banner_lol{
+    grid-column: 1/6;
+    background-color: green;
+    height: 200px;
+    margin-bottom: 80px;
+    background-image: url(../img/lol/banner_renata.png);
+    align-self: center;
+    background-position: center;
+    background-size: cover;
+    margin-right: -10%;
+    margin-left: -10%;
+
+}
+.renata_lol{
+    grid-column: 1/3;
+    grid-row: 2/6;
+    background-image: url(../img/lol/renata.png);
+    height: 700px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    margin: 25px;
+    filter: drop-shadow(0px 0px 10px rgb(170, 3, 170));
+    border-radius: 8px;
 }
 
 
