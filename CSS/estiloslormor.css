@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* Tipografia general */
 /* Declaro nombre y link de donde esta */
@@ -17,16 +20,11 @@
 body{
     font-family: "roboto_regular";
     background-color: #041124;
+    background-image: linear-gradient(#2a3249, #020305);
     color: #a9bfb1;  
 }
-#index_fijo{
-        /* para que la barra nos siga mientras bajamos, solo en el index */
-        position:fixed;
-        /* para sobreponer sobre todo */
-        z-index: 2;
-}
 header{
-    background-color: black;
+    background-color: rgba(10, 10, 10, 0.986);
     width: 100%;
 
 }
@@ -69,12 +67,12 @@ header nav{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 20px;
-
 }
 
 .menu_boton {
     margin-right: 15px;
 }
+
 
 
 /* Boton quien es lormor */
@@ -85,14 +83,19 @@ header nav{
     border-radius: 4em;
     z-index: 1;
     font-size: 25px;
-    
-    
 }
 .quien_lormor a{
     text-decoration: none;
     color: aliceblue;
+    cursor: help;
 }
-.hero{
+.quien_lormor:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: help;
+}
+/* Fondo imagen luna */
+.contenedor_luna{
     background-image: url(../img/fondolormor2.jpg);
     height: 100vh;
     width: 100%;
@@ -105,7 +108,6 @@ header nav{
     background-attachment: fixed;
 
 }
-
 /* presentacion de persona */
 /* Aca lo que hice es darle un ancho maximo al contenedor de texto y puse fit content para
 que tomase el ancho del body y no de la pantalla */
@@ -115,6 +117,7 @@ que tomase el ancho del body y no de la pantalla */
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
+
 }
 .avatar_logo{
     width: 200px;
@@ -127,13 +130,41 @@ que tomase el ancho del body y no de la pantalla */
     font-size: 25px;
     width: 500px;
     display: inline-block;
-    background-color: #c2bcc5;
-    color: black;
+    color: #c2bcc5;
     border-radius: 25px;
     padding: 25px;
+    border-style: solid;
+    border-width: thin;
 }
 
+.skills{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    transition: .5s;
+}
 
+.skills:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+.skills:hover h2{
+    opacity: 0;
+}
+.skills h3{
+    opacity: 0;
+}
+.skills:hover h3{
+    opacity: 1;
+}
+
+.icon_logo{
+    width: 100px;
+    height: 100px;
+}
 
 /* footer */
 
@@ -286,3 +317,95 @@ margin: 20px;
     border-radius: 25px;
     padding: 10px;
 }
+
+/* pagina del lol */
+.main_lol{
+    display: grid;
+    grid-template-areas: 
+    "img_grid img_grid nombre_lol nombre_lol"
+    "img_grid img_grid nombre_lol nombre_lol"
+    "img_grid img_grid leyenda_lol leyenda_lol"
+    "img_grid img_grid texto_lol texto_lol"
+    "img_grid img_grid texto_lol botones"
+    ;
+
+}
+
+.imagen_lol{
+    grid-area: img_grid;
+    background-color: red;
+}
+.nombre_lol{
+    grid-area: nombre_lol;
+    background-color: green;
+}
+.leyenda_lol{
+    grid-area: leyenda_lol;
+    background-color: blue;
+}
+.texto_lol{
+    grid-area: texto_lol;
+    background-color: yellow;
+}
+.botones_guias{
+    grid-area: botones;
+    background-color: #2a3249;
+}
+
+
+
+
+
+
+.div_banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* Defino el tamaño de la imagen */
+.lol_banner{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 720px;
+
+}
+/* Achico la iamgen */
+.lol_banner img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s;
+}
+/* Le devuelvo el tamaño de la imagen, le subo un cacho el contraste y la devuelvo la opacidad */
+.lol_banner img:hover{
+    cursor: pointer;
+    width: 20%;
+    opacity: 1;
+    filter: contrast(120%);
+    height: 100vh;
+
+}
+
+.linea_gris{
+    width: 80%;
+    height: 2px;
+    background-color: grey;
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+}
+.div_linea{
+    display: flex;
+    justify-content: center;
+}
+
+.tresh{
+    margin: 25px;
+    filter: drop-shadow(0px 0px 10px cyan);
+    border-radius: 8px;
+
+}
+
+
