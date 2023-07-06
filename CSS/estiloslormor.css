@@ -13,12 +13,18 @@ html{
 @font-face {
     font-family: "roboto_regular";
     src: url(../fonts/Roboto-Regular.ttf);
-    font-family: "roboto_black";
-    src: url(../fonts/Roboto-BlackItalic.ttf);
+}
+@font-face {
     font-family: "soul_big";
     src: url(../fonts/Soulgood.ttf);
+}
+@font-face {
     font-family: "valorant";
-    src: url(../fonts/Valorant\ Font.ttf);
+    src: url(../fonts/Valorant.ttf);
+}
+@font-face {
+    font-family: "cuadrado";
+    src: url(../fonts/Square.ttf);
 }
 /* body genral tipografia y color */
 body{
@@ -34,10 +40,8 @@ header{
 }
 /* marco con color cada boton para que se sepa en que pagina se está */
 #estoy_aca{
-    background-color: #a9bfb1;
-    color: black;
-    padding: 5px;
-    border-radius: 25px;
+    filter: drop-shadow(0px 0px 10px cyan);
+    border-radius: 8px;
 }
 
 h1{
@@ -58,6 +62,7 @@ ul li a{
 }
 /* para hacer el menu una etiqueta de bloque */
 header nav ul li{
+    font-family: "cuadrado";
     display: inline-block;
     font-size: 20px;
 
@@ -76,6 +81,7 @@ header nav{
 
 .menu_boton {
     margin-right: 15px;
+    transition: .5s;
 }
 .menu_boton:hover{
     filter: drop-shadow(0px 0px 10px cyan);
@@ -93,7 +99,9 @@ header nav{
     padding: 15px;
     border-radius: 4em;
     z-index: 1;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: "cuadrado";
+    text-align: center;
 }
 .quien_lormor a{
     text-decoration: none;
@@ -122,30 +130,44 @@ header nav{
 /* presentacion de persona */
 /* Aca lo que hice es darle un ancho maximo al contenedor de texto y puse fit content para
 que tomase el ancho del body y no de la pantalla */
+.grid_index{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    gap: 20px;
+    grid-template-rows: minmax(auto, auto);
+
+}
 
 .astro_div{
-    max-width: fit-content;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 .avatar_logo{
     width: 200px;
     height: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-bottom: 30px;
 
 }
 .texto_index{
     font-size: 25px;
     width: 500px;
-    display: inline-block;
     color: #c2bcc5;
     border-radius: 25px;
     padding: 25px;
     border-style: solid;
     border-width: thin;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.bitcoin{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 .skills{
