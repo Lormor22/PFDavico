@@ -3,6 +3,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
 }
 html{
     scroll-behavior: smooth;
@@ -33,43 +40,40 @@ body{
     background-image: linear-gradient(#2a3249, #020305);
     color: #a9bfb1;  
 }
+/*  BARRA DE NAVEGACION */
 header{
     background-color: rgba(10, 10, 10, 0.986);
     width: 100%;
+    display: flex;
+    align-items: center;
 
-}
-/* marco con color cada boton para que se sepa en que pagina se está */
-#estoy_aca{
-    filter: drop-shadow(0px 0px 10px cyan);
-    border-radius: 8px;
 }
 
 h1{
     font-family: "valorant";
     font-size: 50px;
-
 }
 h1 a{
     /* eliminar el "modo link" del texto */
     text-decoration: none;
     color: white;
 }
-
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
 /* Acomodar el menu */
-ul li a{
+nav ul li a{
     text-decoration: none;
     color: aliceblue;
-}
-/* para hacer el menu una etiqueta de bloque */
-header nav ul li{
     font-family: "cuadrado";
-    display: inline-block;
     font-size: 20px;
-
 }
-header div,
-header nav{
-    display: inline-block;
+nav ul li{
+    color: aliceblue;
+    font-family: "cuadrado";
+    font-size: 20px;
 }
 
 .lormor_logo {
@@ -78,7 +82,11 @@ header nav{
     margin-top: 10px;
     margin-left: 20px;
 }
-
+/* marco con color cada boton para que se sepa en que pagina se está */
+#estoy_aca{
+    filter: drop-shadow(0px 0px 10px cyan);
+    border-radius: 8px;
+}
 .menu_boton {
     margin-right: 15px;
     transition: .5s;
@@ -137,7 +145,6 @@ que tomase el ancho del body y no de la pantalla */
     grid-template-rows: 1fr 1fr ;
     gap: 20px;
     grid-template-rows: minmax(auto, auto);
-
 }
 
 .astro_div{
@@ -204,28 +211,21 @@ que tomase el ancho del body y no de la pantalla */
 footer{
     background-color: black;
     padding-top: 50px;
-    text-align: left;
-
+    text-align: center;
 }
 
 footer a{
-
     color: aliceblue;
     width: auto;
     width: 50px;
     height: 50px;
-
-
-    
 
 }
 footer section h6{
     text-align: center;
     padding-bottom: 30px;
     background-color: black;
-
 }
-
 footer section a img{
     width: 50px;
     height: 50px;
@@ -236,7 +236,8 @@ footer section a img{
     margin: 10px;
 }
 .footer_links{
-    text-align: right;
+    display: flex;
+    justify-content: end;
     margin-right: 50px;
 }
 
@@ -267,12 +268,18 @@ footer section a img{
     background-attachment: fixed;
     padding: 100px;
 }
-
+.main_post{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #11151f98;
+}
 
 /* Diseño titulo pagina */
 .titulo_principal{
     font-size: 200px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     -webkit-text-fill-color: #c2bcc5;
     -webkit-text-stroke: 3px black;
@@ -284,53 +291,87 @@ footer section a img{
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-left: 150px;
-    margin-top: 110px;
-    margin-bottom: 100px;
-
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 .img_presentador{
     width: 100px;
     height: 100px;
     display: inline-block;
+    margin-left: 6%;
 }
 
 .titulo_presentador{
-    font-size: 25px;
+    background-color:#08090e98; ;
     display: inline-block;
-    background-color: #c2bcc5;
-    color: black;
+    border-style: solid;
+    color: white;
     border-radius: 25px;
     padding: 25px;
 }
-
+.titulo_presentador h2{
+    font-size: 35px;
+}
+.titulo_presentador h5,h6{
+    font-size: 17px;
+    display: inline-block;
+}   
+.new{
+    color: white;
+    background-color: green;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 12px;
+}
 .contenedor_post{
     width: 60%;
-    text-align: center; 
     margin: auto;
+    border-left-style: solid;
+    border-left-width: 10px;
 
 }
 .texto_post{
     font-size: 25px;
     margin: 50px;
-    background-color: #c2bcc5;
-    color: black;
+    color: rgb(216, 212, 212);
     border-radius: 25px;
     padding: 25px;
 }
+.div_cita{
+    display: flex;
+    margin: auto;
+    width: 60%;
+    background-color: #08090e98;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;;
+}
 
 .div_imagen{
+    display: flex;
+    flex-direction: column;
     max-width: fit-content;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
 }
-
-.imagen_post{
-    width: 1400px;
-    height: 680px;
+.video{
+    width: 720px; 
+    height: 500px;
 }
+.imagen_post{
+    width: 100%;
+    height: 40%;
+    max-width: fit-content;
+}
+.div_imagen2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+
 
 .en_construccion{
     margin-top: 200px;
@@ -344,7 +385,6 @@ margin: 20px;
 
 .texto_adv{
     font-size: 14px;
-    margin: 50px;
     background-color: #c2bcc5;
     color: black;
     border-radius: 25px;
@@ -408,14 +448,11 @@ margin: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 200px;
 
 }
 .thresh_banner_lol{
     grid-column: 1/6;
-    background-color: green;
     height: 200px;
     margin-bottom: 80px;
     background-image: url(../img/lol/banner_thresh.png);
@@ -429,7 +466,7 @@ margin: 20px;
     grid-column: 1/3;
     grid-row: 2/6;
     background-image: url(../img/lol/thresh.jpg);
-    height: 700px;
+    height: 800px;
     align-items: center;
     background-position: center;
     background-size: cover;
@@ -442,6 +479,7 @@ margin: 20px;
     font-family: "soul_big";
     justify-self: end;
     align-self: end;
+    margin-right: 20px;
 }
 .nombre_lol h2{
     font-size: 150px;
@@ -523,7 +561,7 @@ margin: 20px;
     grid-column: 1/3;
     grid-row: 2/6;
     background-image: url(../img/lol/renata.png);
-    height: 700px;
+    height: 800px;
     align-items: center;
     background-position: center;
     background-size: cover;
@@ -532,4 +570,338 @@ margin: 20px;
     border-radius: 8px;
 }
 
+/* CONTACTO */
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
 
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background: #050505;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+	width:100%;
+	border:1px solid #000000;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #000000;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:cyan;
+	color:#220b0b;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button:hover {
+	background:rgb(54, 54, 54);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #000000;
+}
+
+@media (max-width: 575px){
+    .main_post{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /* Header */
+    header{
+        display: grid;
+        justify-content: center;
+    }
+    .menu_boton a{
+        font-size: 23px;
+    }
+    .div_lormor_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+    
+    .lormor_logo {
+        margin-right: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .grid_index{
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns:100% ;
+        grid-template-rows: repeat(4,1fr);
+        gap: 20px;
+        grid-template-rows: minmax(auto, auto);
+    }
+    .avatar_logo{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    
+    }
+    .bitcoin{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+    .skills{
+        margin-top: 200px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 10px;
+        text-align: center;
+        transition: .5s;
+    }
+    .skills h3{
+        opacity: 1;
+    }
+/* diseño */
+
+.titulo_principal{
+    
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
+    -webkit-text-fill-color: #c2bcc5;
+    -webkit-text-stroke: 3px black;
+}
+.contenedor_t_principal_disenio{
+    padding: 5%;
+}
+.contenedor_t_principal_animacion{
+    padding: 5%;
+}
+.contenedor_t_principal_dibujo{
+    padding: 5%;
+}
+.contenedor_t_principal_contacto{
+    padding: 5%;
+}
+
+.img_presentador{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 1%;
+}
+.titulo_presentador h2{
+    font-size: 20px;
+}
+.titulo_presentador h5,h6{
+    font-size: 17px;
+    display: inline-block;
+}
+
+.div_presentador{
+    gap: 10px;
+
+}
+.contenedor_post{
+    width: 90%;
+    margin: auto;
+    border-left-style: solid;
+    border-left-width: 10px;
+}
+.texto_post{
+    font-size: 15px;
+    margin: 10px;
+}
+.video{
+    width: 300px; 
+    height: 200px;
+}
+.imagen_post2{
+    width: 100%;
+    height: 100%;
+}
+.div_imagen2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+.en_construccion{
+    margin-top: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Champion 1 #Thresh */
+.div_lol{
+    margin-bottom: 100px;
+
+}
+.thresh_banner_lol{
+    grid-column: 1/6;
+    height: 200px;
+    margin-right: -20%;
+    margin-left: -20%;
+}
+.nombre_lol{
+    grid-column: 4/6;
+    grid-row: 2/3;
+    z-index: 1;
+
+}
+.thresh_lol{
+    grid-column: 1/5;
+    grid-row: 2/5;
+    height: 600px;
+    z-index: 0;
+}
+
+.nombre_lol h2{
+    font-size: 100px;
+    -webkit-text-fill-color: #c2bcc5;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.877);
+}
+.nombre_lol h4{
+    font-size: 13px;
+}
+.texto_lol{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.877);
+    padding: 10px;
+    background-color: #000000c7;
+    border-radius: 10px;
+    z-index: 1;
+}
+.botones_guias{
+    grid-column: 1/5;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+.botones_guias h3{
+    margin-right: 10px;
+}
+ /* Botones de guias */
+.opgg{
+    width: 150px;
+    height: 60px;
+}
+.skills_lol{
+    grid-column: 2/5;
+}
+/* Champion 2 Renata */
+.renata_banner_lol{
+    grid-column: 1/6;
+    height: 200px;
+    margin-right: -20%;
+    margin-left: -20%;
+
+}
+.renata_lol{
+    grid-column: 1/5;
+    grid-row: 2/5;
+    height: 600px;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer celular*/
+footer{
+    padding-top: 10px;
+    text-align: center;
+    height: 200px;
+}
+
+footer a{
+    color: aliceblue;
+    width: auto;
+    width: 10px;
+    height: 10px;
+
+}
+footer section h6{
+    font-size: 10px0;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: black;
+}
+footer section a img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    display: inline-block;
+}
+.footer_links a{
+    margin: 50px;
+}
+.footer_links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    gap: 10px;
+}
+
+
+
+
+}
