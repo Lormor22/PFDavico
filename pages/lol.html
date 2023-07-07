@@ -11,11 +11,26 @@
 <body>
     <!-- Cabecera, encerrando el menu y logo-->
     <header>
+        <nav class="nav_cel" role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="./disenio.html"><li>Diseño</li></a>
+                    <a href="./animacion.html"><li>Animación</li></a>
+                    <a href="./dibujo.html"><li>Dibujo</li></a>
+                    <li id="estoy_aca">LoL</li>
+                    <a href="./contacto.html"><li>Contacto</li></a>
+                </ul>
+            </div>
+        </nav>
         <!-- Logo, incio, nombre -->
         <div class="div_lormor_logo">
             <h1 class="lormor_logo"> <a href="../index.html">Lormor</a></h1>
         </div>
-        <nav>
+        <nav class="nav_pc">
             <!-- Barra de navegacion-->
             <ul>
                 <li class="menu_boton"><a href="./disenio.html">Diseño</a></li>
@@ -28,24 +43,35 @@
     </header>
     <div class="div_banner">
         <div class="lol_banner">
-            <img src="../img/lol/support.jpg" alt="Foto de support nami league of legends"> 
-            <img src="../img/lol/adc.jpg" alt="foto de adc kaisa league of legends"> 
-            <img src="../img/lol/mid.jpg" alt="foto de mid azil league of legends"> 
-            <img src="../img/lol/jungla.jpg" alt="foto de rengar jungla league of legends"> 
-            <img src="../img/lol/top.jpg" alt="foto de urgot top league of legends"> 
+            <a href="#supp"><img src="../img/lol/support.jpg" alt="Foto de support nami league of legends"></a> 
+            <a href="#adc"><img src="../img/lol/adc.jpg" alt="foto de adc kaisa league of legends"></a> 
+            <a href="#mid"><img src="../img/lol/mid.jpg" alt="foto de mid azil league of legends"></a> 
+            <a href="#jungla"><img src="../img/lol/jungla.jpg" alt="foto de rengar jungla league of legends"></a> 
+            <a href="#top"><img src="../img/lol/top.jpg" alt="foto de urgot top league of legends"></a> 
         </div>
     </div>
+    <div class="div_banner_cel">
+        <div class="lol_banner_cel">
+            <a href="#supp"><img src="../img/lol/supp icon.jpg" alt=""></a>
+            <a href="#adc"><img src="../img/lol/adcicon.jpg" alt=""></a>
+            <a href="#mid"><img src="../img/lol/midicon.jpg" alt=""></a>
+            <a href="#jungla"><img src="../img/lol/junglaicon.jpg" alt=""></a>
+            <a href="#top"><img src="../img/lol/topicon.jpg" alt=""></a>
+        </div>
+    </div>
+
 
 <!-- Separador de contenido -->
     <div class="div_linea">
         <div class="linea_gris"></div>
     </div>
 <!-- Contenido principal -->
-    <div class="div_linea">
-        <h2>Soportes</h2>
-    </div>
+    
         <!-- Thresh -->
     <main>
+        <div class="div_linea">
+            <h2 id="supp">Soportes</h2>
+        </div>
         <div class="main_post">
             <div class="div_lol">
                 <div class="thresh_banner_lol">
@@ -125,6 +151,70 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="div_linea">
+                <h2 id="adc">Tiradores</h2>
+            </div>
+            <div class="main_post">
+                <div class="div_lol">
+                    <div class="zeri_banner_lol">
+                    </div>
+                    <div class="zeri_lol">
+                    </div>
+                    <div class="nombre_lol">
+                        <h2>Zeri</h2>
+                        <h4>La Chispa de Zaun</h4>
+                    </div>
+                    <div class="texto_lol">
+                        <p>Una joven testaruda y llena de vida de la clase trabajadora de Zaun. Zeri canaliza su magia eléctrica para cargarse a sí misma y su fusil personalizado. Su volátil poder canaliza sus emociones, y sus chispas se inspiran en su veloz estilo de vida. Compasiva con todo aquel que la rodea, Zeri pone todo el amor de su familia y su hogar en cada combate. Aunque su entusiasmo a veces le puede jugar una mala pasada, Zeri tiene una verdad absoluta: si das la cara por tu comunidad, tu comunidad luchará a tu lado.</p>
+                    </div>
+                    <div class="skills_lol">
+                        <div>
+                            <img src="../img/lol/zeri_skills/ZeriQ.webp" alt="Thresh habilidad Q">
+                            <h4>Q</h4>
+                        </div>
+                        <div>
+                            <img src="../img/lol/zeri_skills/ZeriW.webp" alt="Thresh habilidad W">
+                            <h4>W</h4>
+                        </div>
+                        <div>
+                            <img src="../img/lol/zeri_skills/ZeriE.webp" alt="Thresh habilidad E">
+                            <h4>E</h4>
+                        </div>
+                        <div>
+                            <img src="../img/lol/zeri_skills/ZeriR.webp" alt="Thresh habilidad R">
+                            <h4>R</h4>
+                        </div>
+                    </div>
+                    <div class="botones_guias">
+                        <h3>Guias:</h3>
+                        <a href="https://www.leagueofgraphs.com/es/champions/builds/thresh" target="_blank"><img class="graphs" src="https://lolg-cdn.porofessor.gg/img/s/banner2.png" alt="league of graphs"></a>
+                        <a href="https://www.op.gg/champions/thresh/support/" target="_blank"><img class="opgg" src="https://s-lol-web.op.gg/images/icon/opgglogo.svg?v=1688526081600" alt="Opgg"></a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="div_linea">
+                    <h2 id="mid">Mid</h2>
+                </div>
+                <div class="div_linea">
+                    <h2 id="jungla">Junglas</h2>
+                </div>
+                <div class="div_linea">
+                    <h2 id="top">Tops</h2>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
