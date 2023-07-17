@@ -1,0 +1,1010 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tipografia general */
+/* Declaro nombre y link de donde esta */
+@font-face {
+  font-family: "roboto_regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "soul_big";
+  src: url(../fonts/Soulgood.ttf);
+}
+@font-face {
+  font-family: "valorant";
+  src: url(../fonts/Valorant.ttf);
+}
+@font-face {
+  font-family: "cuadrado";
+  src: url(../fonts/Square.ttf);
+}
+html {
+  scroll-behavior: smooth;
+  /* body genral tipografia y color */
+}
+
+body {
+  font-family: "roboto_regular";
+  background-color: #041124;
+  background-image: linear-gradient(#2a3249, #020305);
+  color: #a9bfb1;
+}
+
+/*  BARRA DE NAVEGACION */
+h1 {
+  font-family: "valorant";
+  font-size: 50px;
+}
+h1 a {
+  /* eliminar el "modo link" del texto */
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: rgba(10, 10, 10, 0.986);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* Apagar el menu H en mono desktop */
+}
+header .nav_cel {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  /* marco con color cada boton para que se sepa en que pagina se está */
+}
+header nav ul #estoy_aca {
+  filter: drop-shadow(0px 0px 10px cyan);
+  border-radius: 8px;
+}
+header nav ul .menu_boton {
+  margin-right: 15px;
+  transition: 0.5s;
+}
+header nav ul .menu_boton:hover {
+  filter: drop-shadow(0px 0px 10px cyan);
+  border-radius: 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header nav ul li {
+  color: aliceblue;
+  font-family: "cuadrado";
+  font-size: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "cuadrado";
+  font-size: 20px;
+}
+header div .lormor_logo {
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+footer {
+  background-color: black;
+  padding-top: 50px;
+  text-align: center;
+}
+footer .footer_links {
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+}
+footer .footer_links a {
+  margin: 10px;
+}
+footer a {
+  color: aliceblue;
+  width: auto;
+  width: 50px;
+  height: 50px;
+}
+footer section h6 {
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: black;
+}
+footer section a img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  display: inline-block;
+}
+
+main {
+  /* Fondo imagen luna */
+  /* Boton quien es lormor */
+}
+main .contenedor_luna {
+  background-image: url(../img/fondolormor2.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+}
+main div .quien_lormor {
+  background-color: rgb(0, 0, 0);
+  width: 230px;
+  padding: 15px;
+  border-radius: 4em;
+  z-index: 1;
+  font-size: 20px;
+  font-family: "cuadrado";
+  text-align: center;
+}
+main div .quien_lormor a {
+  text-decoration: none;
+  color: aliceblue;
+  cursor: help;
+}
+main div .quien_lormor:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  cursor: help;
+}
+main section .grid_index {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-rows: minmax(auto, auto);
+}
+main section .bitcoin {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+main section div .astro_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+main section div div .avatar_logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+main section div div .texto_index {
+  font-size: 25px;
+  width: 500px;
+  color: #c2bcc5;
+  border-radius: 25px;
+  padding: 25px;
+  border-style: solid;
+  border-width: thin;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .skills {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  transition: 0.5s;
+}
+main .skills h3 {
+  opacity: 0;
+}
+main .skills div .icon_logo {
+  width: 100px;
+  height: 100px;
+}
+main .skills:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+main .skills:hover h2 {
+  opacity: 0;
+}
+main .skills:hover h3 {
+  opacity: 1;
+}
+
+/* Limpiamos los estilos por default que vienen en css */
+/* Diseño general de las páginas y post de imagenes*/
+/* Imagen de fondo banner titulo  */
+.contenedor_t_principal_disenio {
+  background-image: url(../img/diseñoback.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+}
+
+.contenedor_t_principal_animacion {
+  background-image: url(../img/animacback.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+}
+
+.contenedor_t_principal_dibujo {
+  background-image: url(../img/dibuback.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+}
+
+.contenedor_t_principal_contacto {
+  background-image: url(../img/contactoback.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+}
+
+.main_post {
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: rgba(17, 21, 31, 0.5960784314);
+}
+
+/* Diseño titulo pagina */
+.titulo_principal {
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  -webkit-text-fill-color: #c2bcc5;
+  -webkit-text-stroke: 3px black;
+}
+
+/* Titulo del post / imagenes / texto */
+.div_presentador {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.img_presentador {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-left: 6%;
+}
+
+.titulo_presentador {
+  background-color: rgba(8, 9, 14, 0.5960784314);
+  display: inline-block;
+  border-style: solid;
+  color: white;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.titulo_presentador h2 {
+  font-size: 35px;
+}
+
+.titulo_presentador h5, h6 {
+  font-size: 17px;
+  display: inline-block;
+}
+
+.new {
+  color: white;
+  background-color: green;
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.contenedor_post {
+  width: 60%;
+  margin: auto;
+  border-left-style: solid;
+  border-left-width: 10px;
+}
+
+.texto_post {
+  font-size: 25px;
+  margin: 50px;
+  color: rgb(216, 212, 212);
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.div_cita {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  background-color: rgba(8, 9, 14, 0.5960784314);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.div_imagen {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.video {
+  width: 720px;
+  height: 500px;
+}
+
+.imagen_post {
+  width: 100%;
+  height: 40%;
+  max-width: fit-content;
+}
+
+.div_imagen2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+
+.en_construccion {
+  margin-top: 200px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.texto_adv {
+  font-size: 14px;
+  background-color: #c2bcc5;
+  color: black;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* pagina del lol */
+/* Seleccion de rol */
+.div_banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Defino el tamaño de la imagen */
+.lol_banner {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 720px;
+}
+
+/* Achico la iamgen */
+.lol_banner a {
+  display: flex;
+  justify-content: center;
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+/* Le devuelvo el tamaño de la imagen, le subo un cacho el contraste y la devuelvo la opacidad */
+.lol_banner a:hover {
+  width: 20%;
+  opacity: 1;
+  filter: contrast(120%);
+  height: 90vh;
+  z-index: 1;
+  filter: drop-shadow(0px 0px 10px rgb(164, 165, 165));
+  border-radius: 8px;
+  height: auto; /* Ajusta la altura deseada */
+  margin: -5% -5%; /* Ajusta el margen para agrandar en ambos lados */
+  max-width: 80%;
+}
+
+/* Separador */
+.linea_gris {
+  width: 80%;
+  height: 2px;
+  background-color: grey;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.div_linea {
+  display: flex;
+  justify-content: center;
+}
+
+.div_linea h2 {
+  font-family: "soul_big";
+  font-size: 150px;
+  margin-bottom: 100px;
+}
+
+/* Champion 1 #Thresh */
+.div_lol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 200px;
+}
+
+.div_banner_cel {
+  display: none;
+}
+
+.thresh_banner_lol {
+  grid-column: 1/6;
+  height: 200px;
+  margin-bottom: 80px;
+  background-image: url(../img/lol/banner_thresh.png);
+  align-self: center;
+  background-position: center;
+  background-size: cover;
+  margin-right: -10%;
+  margin-left: -10%;
+}
+
+.thresh_lol {
+  grid-column: 1/3;
+  grid-row: 2/6;
+  background-image: url(../img/lol/thresh.jpg);
+  height: 800px;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  margin: 25px;
+  filter: drop-shadow(0px 0px 10px cyan);
+  border-radius: 8px;
+}
+
+.nombre_lol {
+  grid-column: 4/6;
+  font-family: "soul_big";
+  justify-self: end;
+  align-self: end;
+  margin-right: 20px;
+}
+
+.nombre_lol h2 {
+  font-size: 150px;
+}
+
+.nombre_lol h4 {
+  font-family: "roboto_regular";
+  text-align: end;
+}
+
+.texto_lol {
+  grid-column: 3/6;
+  grid-row: 3/5;
+  font-size: 20px;
+}
+
+.botones_guias {
+  grid-column: 5/6;
+}
+
+/* Botones de guias */
+.opgg {
+  width: 150px;
+  height: 60px;
+}
+
+.opgg:hover {
+  filter: drop-shadow(0px 0px 10px cyan);
+  border-radius: 8px;
+}
+
+.graphs:hover {
+  filter: drop-shadow(0px 0px 10px cyan);
+  border-radius: 8px;
+}
+
+.skills_lol {
+  grid-column: 3/5;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  gap: 20px;
+  height: 50px;
+}
+
+.skills_lol div {
+  position: relative;
+  display: inline-block;
+  text-align: end;
+}
+
+.skills_lol img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 20px;
+  filter: drop-shadow(0px 0px 10px rgb(44, 43, 44));
+  border-radius: 8px;
+}
+
+.skills_lol h4 {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background-color: #2a3249;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* Champion 2 Renata */
+.renata_banner_lol {
+  grid-column: 1/6;
+  height: 200px;
+  margin-bottom: 80px;
+  background-image: url(../img/lol/banner_renata.png);
+  align-self: center;
+  background-position: center;
+  background-size: cover;
+  margin-right: -10%;
+  margin-left: -10%;
+}
+
+.renata_lol {
+  grid-column: 1/3;
+  grid-row: 2/6;
+  background-image: url(../img/lol/renata.png);
+  height: 800px;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  margin: 25px;
+  filter: drop-shadow(0px 0px 10px rgb(170, 3, 170));
+  border-radius: 8px;
+}
+
+/* Champion 3 zeri */
+.zeri_banner_lol {
+  grid-column: 1/6;
+  height: 200px;
+  margin-bottom: 80px;
+  background-image: url(../img/lol/banner_zeri.png);
+  align-self: center;
+  background-position: center;
+  background-size: cover;
+  margin-right: -10%;
+  margin-left: -10%;
+}
+
+.zeri_lol {
+  grid-column: 1/3;
+  grid-row: 2/6;
+  background-image: url(../img/lol/zeri.png);
+  height: 800px;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  margin: 25px;
+  filter: drop-shadow(0px 0px 10px rgb(8, 197, 103));
+  border-radius: 8px;
+}
+
+/* CONTACTO */
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type=text], #contact input[type=email], #contact textarea, #contact button[type=submit] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #050505;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#contact h3 {
+  color: #F96;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type=text], #contact input[type=email], #contact textarea {
+  width: 100%;
+  border: 1px solid #000000;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type=text]:hover, #contact input[type=email]:hover, #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #000000;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type=submit] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: cyan;
+  color: #220b0b;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button:hover {
+  background: rgb(54, 54, 54);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  border: 1px solid #000000;
+}
+
+@media (max-width: 575px) {
+  .main_post {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /* Header */
+  .nav_cel {
+    display: block;
+    width: 575;
+  }
+  .nav_pc {
+    display: none;
+  }
+  .lormor_logo h1 {
+    margin: 0;
+  }
+  #menuToggle {
+    margin: 20px;
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+  #menuToggle a:hover {
+    color: tomato;
+  }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fcfcfc;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -20px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #000000;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  /* Fin menu hamburgueasa */
+  .lormor_logo {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .grid_index {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-rows: minmax(auto, auto);
+  }
+  .avatar_logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+  .texto_index {
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+  }
+  .bitcoin {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+  .skills {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 10px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .skills h3 {
+    opacity: 1;
+  }
+  /* diseño */
+  .titulo_principal {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    -webkit-text-fill-color: #c2bcc5;
+    -webkit-text-stroke: 3px black;
+  }
+  .contenedor_t_principal_disenio, .contenedor_t_principal_contacto, .contenedor_t_principal_dibujo, .contenedor_t_principal_animacion {
+    padding: 5%;
+  }
+  .img_presentador {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  .titulo_presentador h2 {
+    font-size: 20px;
+  }
+  .titulo_presentador h5, h6 {
+    font-size: 17px;
+    display: inline-block;
+  }
+  .div_presentador {
+    gap: 10px;
+  }
+  .contenedor_post {
+    width: 90%;
+    margin: auto;
+    border-left-style: solid;
+    border-left-width: 10px;
+  }
+  .texto_post {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .video {
+    width: 300px;
+    height: 200px;
+  }
+  .imagen_post2 {
+    width: 100%;
+    height: 100%;
+  }
+  .div_imagen2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+  .en_construccion {
+    margin-top: 5%;
+    font-size: 30px;
+    text-align: center;
+  }
+  /* lol */
+  .div_linea h2 {
+    font-size: 100px;
+    margin-bottom: 100px;
+  }
+  .div_banner {
+    display: none;
+  }
+  .div_lol {
+    margin-bottom: 100px;
+  }
+  .div_banner_cel {
+    display: block;
+  }
+  .lol_banner_cel {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    text-align: center;
+  }
+  .lol_banner_cel a img {
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    border-radius: 60px;
+  }
+  .nombre_lol {
+    grid-column: 4/6;
+    grid-row: 2/3;
+    z-index: 1;
+  }
+  .nombre_lol h2 {
+    font-size: 100px;
+    -webkit-text-fill-color: #c2bcc5;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.877);
+  }
+  .nombre_lol h4 {
+    font-size: 13px;
+  }
+  .texto_lol {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.877);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7803921569);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .botones_guias {
+    grid-column: 1/5;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .botones_guias h3 {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+  /* Botones de guias */
+  .opgg {
+    width: 150px;
+    height: 60px;
+  }
+  .skills_lol {
+    grid-column: 2/5;
+  }
+  /* Champion 1 #Thresh */
+  /* Champion 2 Renata */
+  /* Champion 3 zeri */
+  .thresh_banner_lol, .renata_banner_lol, .zeri_banner_lol {
+    grid-column: 1/6;
+    height: 200px;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .thresh_lol, .renata_lol, .zeri_lol {
+    grid-column: 1/5;
+    grid-row: 2/5;
+    height: 600px;
+    z-index: 0;
+  }
+  /* footer celular*/
+  footer {
+    padding-top: 10px;
+    text-align: center;
+    height: 200px;
+  }
+  footer a {
+    color: aliceblue;
+    width: auto;
+    width: 10px;
+    height: 10px;
+  }
+  footer section h6 {
+    font-size: 10px0;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: black;
+  }
+  footer section a img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    display: inline-block;
+  }
+  .footer_links a {
+    margin: 50px;
+  }
+  .footer_links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

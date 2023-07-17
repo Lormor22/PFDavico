@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* Tipografia general */
+/* Declaro nombre y link de donde esta */
+@font-face {
+    font-family: "roboto_regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "soul_big";
+    src: url(../fonts/Soulgood.ttf);
+}
+@font-face {
+    font-family: "valorant";
+    src: url(../fonts/Valorant.ttf);
+}
+@font-face {
+    font-family: "cuadrado";
+    src: url(../fonts/Square.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+    /* body genral tipografia y color */
+}
+body{
+    font-family: "roboto_regular";
+    background-color: #041124;
+    background-image: linear-gradient(#2a3249, #020305);
+    color: #a9bfb1; 
+}
+    /*  BARRA DE NAVEGACION */
+
+h1{
+    font-family: "valorant";
+    font-size: 50px;
+    a{
+        /* eliminar el "modo link" del texto */
+        text-decoration: none;
+        color: white;
+    }
+}

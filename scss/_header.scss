@@ -1,0 +1,51 @@
+header{
+    background-color: rgba(10, 10, 10, 0.986);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* Apagar el menu H en mono desktop */
+    .nav_cel{
+        display: none;
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
+            /* marco con color cada boton para que se sepa en que pagina se está */
+            #estoy_aca{
+                filter: drop-shadow(0px 0px 10px cyan);
+                border-radius: 8px;
+            }
+            .menu_boton {
+                margin-right: 15px;
+                transition: .5s;
+            }
+            .menu_boton:hover{
+                filter: drop-shadow(0px 0px 10px cyan);
+                border-radius: 8px;
+                transition: .5s;
+                cursor: pointer;
+            }
+            li{
+                color: aliceblue;
+                font-family: "cuadrado";
+                font-size: 20px;
+                a{
+                    text-decoration: none;
+                    color: aliceblue;
+                    font-family: "cuadrado";
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    div{
+        .lormor_logo {
+            margin-right: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    }
+}
