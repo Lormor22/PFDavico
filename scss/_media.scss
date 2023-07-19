@@ -6,18 +6,31 @@
 
     /* Header */
 
-
-    .nav_cel{
-        display:block;
-
+    header{
+        .nav_cel{
+            display: block;
+        }
+        .nav_pc{
+            display: none;
+        }
+        .lormor_logo {
+            h1{
+                margin: 0;
+            }
+        }
+        div{
+            .lormor_logo {
+                margin-right: 30px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+        }
+    
+    
     }
-    .nav_pc{
-        display: none;
-    }
-    .lormor_logo h1{
-        margin: 0;
-    }
-        
+    
+        /* Menu hamburguesa */
     #menuToggle{
         margin: 20px;
         display: block;
@@ -140,196 +153,216 @@
     transform: none;
     }
     
- /* Fin menu hamburgueasa */
+         /* Fin menu hamburgueasa */
 
+    /* MAIN */
 
+    main{
+        section{
+            .grid_index{
+                margin-top: 200px;
+                display: grid;
+                grid-template-columns:100% ;
+                grid-template-rows: repeat(4,1fr);
+                gap: 20px;
+                grid-template-rows: minmax(auto, auto);
+            }
+            div{
+                .bitcoin{
+                    grid-column: 1/1;
+                    grid-row: 4/4;
+                }
+                div{
+                    .avatar_logo{
+                        width: 150px;
+                        height: 150px;
+                        margin-bottom: 30px;
+                    }
+                    .texto_index{
+                        font-size: 15px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            
+            }
+            
+        }
+        .skills{
+            margin-top: 200px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            gap: 10px;
+            text-align: center;
+            transition: .5s;
+            h3{
+                opacity: 1;
+            }
+        }
+    }
     
+
+                                /* diseño */
+    main{
+        .contenedor_t_principal_disenio , .contenedor_t_principal_contacto, .contenedor_t_principal_dibujo, .contenedor_t_principal_animacion{
+            padding: 5%;
+        }
+        .div_linea {
+            h2{
+                font-size: 100px;
+                margin-bottom: 100px;
+            }
+        }
+        
+        div{
+            .titulo_principal{
     
-    .lormor_logo {
-        margin-right: 30px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        margin-left: 20px;
+                font-size: 50px;
+                text-align: center;
+                padding: 20px;
+                -webkit-text-fill-color: #c2bcc5;
+                -webkit-text-stroke: 3px black;
+            }
+            .div_presentador{
+                gap: 10px;
+            
+            }
+            .contenedor_post{
+                width: 90%;
+                margin: 0%;
+                border-left-style: solid;
+                border-left-width: 10px;
+            }
+            div{
+                .img_presentador{
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    margin-left: 1%;
+                }
+                .titulo_presentador h2{
+                    font-size: 20px;
+                }
+                h5,h6{
+                    font-size: 17px;
+                    display: inline-block;
+                }
+                .texto_post{
+                    font-size: 15px;
+                    margin: 10px;
+                }
+                .video{
+                    width: 300px; 
+                    height: 200px;
+                }
+                .div_imagen2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 5%;
+                    .imagen_post2{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+        }
     }
-    .grid_index{
-        margin-top: 200px;
-        display: grid;
-        grid-template-columns:100% ;
-        grid-template-rows: repeat(4,1fr);
-        gap: 20px;
-        grid-template-rows: minmax(auto, auto);
-    }
-    .avatar_logo{
-        width: 150px;
-        height: 150px;
-        margin-bottom: 30px;
-    }
-    .texto_index{
-        font-size: 15px;
-        width: 100%;
-        height: 100%;
-    }
-    .bitcoin{
-        grid-column: 1/1;
-        grid-row: 4/4;
-    }
-    .skills{
-        margin-top: 200px;
-        margin-bottom: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        gap: 10px;
-        text-align: center;
-        transition: .5s;
-    }
-    .skills h3{
-        opacity: 1;
-    }
-/* diseño */
-
-.titulo_principal{
-    
-    font-size: 50px;
-    text-align: center;
-    padding: 20px;
-    -webkit-text-fill-color: #c2bcc5;
-    -webkit-text-stroke: 3px black;
-}
-.contenedor_t_principal_disenio , .contenedor_t_principal_contacto, .contenedor_t_principal_dibujo, .contenedor_t_principal_animacion{
-    padding: 5%;
-}
 
 
-.img_presentador{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin-left: 1%;
-}
-.titulo_presentador h2{
-    font-size: 20px;
-}
-.titulo_presentador h5,h6{
-    font-size: 17px;
-    display: inline-block;
-}
 
-.div_presentador{
-    gap: 10px;
-
-}
-.contenedor_post{
-    width: 90%;
-    margin: auto;
-    border-left-style: solid;
-    border-left-width: 10px;
-}
-.texto_post{
-    font-size: 15px;
-    margin: 10px;
-}
-.video{
-    width: 300px; 
-    height: 200px;
-}
-.imagen_post2{
-    width: 100%;
-    height: 100%;
-}
-.div_imagen2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5%;
-}
-.en_construccion{
-    margin-top: 5%;
-    font-size: 30px;
-    text-align: center;
-}
 /* lol */
-.div_linea h2{
-    font-size: 100px;
-    margin-bottom: 100px;
-}
-.div_banner{
-    display: none;
+body{
+    .div_banner{
+        display: none;
+    }
 }
 
-.div_lol{
-    margin-bottom: 100px;
+header{
+    .div_banner_cel{
+        display: block;
+        .lol_banner_cel{
+            margin-top: 10%;
+            margin-bottom: 20%;
+            text-align: center;
+            a{
+                img{
+                        width: 125px;
+                        height: 125px;
+                        margin: 10px;
+                        border-radius: 60px;
+                }
+            }
+        }
+    }
 }
-.div_banner_cel{
-    display: block;
-}
-.lol_banner_cel{
-    margin-top: 10%;
-    margin-bottom: 20%;
-    text-align: center;
-}
-.lol_banner_cel a img{
-    width: 125px;
-    height: 125px;
-    margin: 10px;
-    border-radius: 60px;
-}
+main{
+    div{
+        .div_lol{
+            margin-bottom: 100px;
+        }
+        div{
+            .nombre_lol{
+                grid-column: 4/6;
+                grid-row: 2/3;
+                z-index: 1;
+                h2{
+                    font-size: 100px;
+                    -webkit-text-fill-color: #c2bcc5;
+                    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.877);
+                }
+                h4{
+                    font-size: 13px;
+                }
+            }
+            .texto_lol{
+                -webkit-text-stroke: 1px rgba(0, 0, 0, 0.877);
+                padding: 10px;
+                background-color: #000000c7;
+                border-radius: 10px;
+                z-index: 1;
+            }
+            .skills_lol{
+                grid-column: 2/5;
+            }
+            /* Champion 1 #Thresh */
+            /* Champion 2 Renata */
+            /* Champion 3 zeri */
+            .thresh_banner_lol , .renata_banner_lol , .zeri_banner_lol{
+                grid-column: 1/6;
+                height: 200px;
+                margin-right: 0%;
+                margin-left: 0%;
+            }
+            .thresh_lol , .renata_lol , .zeri_lol{
+                grid-column: 1/5;
+                grid-row: 2/5;
+                height: 600px;
+                z-index: 0;
+            }
+        }
+        .botones_guias{
+            grid-column: 1/5;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 40px;
+            h3{
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+            a{
+                .opgg{
+                    width: 150px;
+                    height: 60px;
+                }
+            }
+        }
+    }
 
-.nombre_lol{
-    grid-column: 4/6;
-    grid-row: 2/3;
-    z-index: 1;
-
-}
-.nombre_lol h2{
-    font-size: 100px;
-    -webkit-text-fill-color: #c2bcc5;
-    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.877);
-}
-.nombre_lol h4{
-    font-size: 13px;
-}
-.texto_lol{
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.877);
-    padding: 10px;
-    background-color: #000000c7;
-    border-radius: 10px;
-    z-index: 1;
-}
-.botones_guias{
-    grid-column: 1/5;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-top: 40px;
-}
-.botones_guias h3{
-    margin-right: 0px;
-    margin-left: 5px;
-}
- /* Botones de guias */
-.opgg{
-    width: 150px;
-    height: 60px;
-}
-.skills_lol{
-    grid-column: 2/5;
-}
-/* Champion 1 #Thresh */
-/* Champion 2 Renata */
-/* Champion 3 zeri */
-.thresh_banner_lol , .renata_banner_lol , .zeri_banner_lol{
-    grid-column: 1/6;
-    height: 200px;
-    margin-right: 0%;
-    margin-left: 0%;
-
-}
-.thresh_lol , .renata_lol , .zeri_lol{
-    grid-column: 1/5;
-    grid-row: 2/5;
-    height: 600px;
-    z-index: 0;
 }
 
 
@@ -342,38 +375,38 @@ footer{
     padding-top: 10px;
     text-align: center;
     height: 200px;
+    a{
+        color: aliceblue;
+        width: auto;
+        width: 10px;
+        height: 10px;
+    }
+    section{
+        h6{
+            font-size: 10px0;
+            text-align: center;
+            padding-bottom: 30px;
+            background-color: black;
+        }
+        a{
+            img{
+                width: 50px;
+                height: 50px;
+                display: block;
+                display: inline-block;
+            }
+        }
+    }
+    .footer_links{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+        gap: 10px;
+        a{
+            margin: 50px;
+        }
+    }
 }
-
-footer a{
-    color: aliceblue;
-    width: auto;
-    width: 10px;
-    height: 10px;
-
-}
-footer section h6{
-    font-size: 10px0;
-    text-align: center;
-    padding-bottom: 30px;
-    background-color: black;
-}
-footer section a img{
-    width: 50px;
-    height: 50px;
-    display: block;
-    display: inline-block;
-}
-.footer_links a{
-    margin: 50px;
-}
-.footer_links{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-    gap: 10px;
-}
-
-
 
 
 }
