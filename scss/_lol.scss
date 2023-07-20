@@ -1,0 +1,209 @@
+.div_banner_cel{
+    display: none;
+}
+.div_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.lol_banner {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 720px;
+    a{
+        display: flex;
+        justify-content: center;
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .9;
+        transition: .5s;
+    }
+    a:hover{
+
+        width: 20%;
+        opacity: 1;
+        filter: contrast(120%);
+        height: 90vh;
+        z-index: 1;
+        filter: drop-shadow(0px 0px 10px rgb(164, 165, 165));
+        border-radius: 8px;
+        height:auto; /* Ajusta la altura deseada */
+        margin: -5% -5%; /* Ajusta el margen para agrandar en ambos lados */
+        max-width: 80%;
+    
+    }
+}
+.div_linea{
+    display: flex;
+    justify-content: center;
+    h2{
+        font-family: "soul_big";
+        font-size: 150px;
+        margin-bottom: 100px;
+    }
+    .linea_gris{
+        width: 80%;
+        height: 2px;
+        background-color: grey;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    
+    }
+}
+
+main{
+
+
+
+    div{
+        .div_lol{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 1em;
+            margin-bottom: 200px;
+            .thresh_banner_lol{
+                grid-column: 1/6;
+                height: 200px;
+                margin-bottom: 80px;
+                background-image: url(../img/lol/banner_thresh.png);
+                align-self: center;
+                background-position: center;
+                background-size: cover;
+                margin-right: -10%;
+                margin-left: -10%;
+            }
+            .thresh_lol{
+                grid-column: 1/3;
+                grid-row: 2/6;
+                background-image: url(../img/lol/thresh.jpg);
+                height: 800px;
+                align-items: center;
+                background-position: center;
+                background-size: cover;
+                margin: 25px;
+                filter: drop-shadow(0px 0px 10px cyan);
+                border-radius: 8px;
+            }
+            .nombre_lol{
+                grid-column: 4/6;
+                font-family: "soul_big";
+                justify-self: end;
+                align-self: end;
+                margin-right: 20px;
+                h2{
+                    font-size: 150px;
+                }
+                h4{
+                    font-family: "roboto_regular";    
+                    text-align: end;
+                }
+            }
+            .texto_lol{
+                grid-column: 3/6;
+                grid-row: 3/5;
+                font-size: 20px;
+            }
+            .botones_guias{
+                grid-column: 5/6;
+            
+            }
+             /* Botones de guias */
+            .opgg{
+                width: 150px;
+                height: 60px;
+            }
+            .opgg:hover{
+                filter: drop-shadow(0px 0px 10px cyan);
+                border-radius: 8px;
+            }
+            .graphs:hover{
+                filter: drop-shadow(0px 0px 10px cyan);
+                border-radius: 8px;
+            }
+            .skills_lol{
+                grid-column: 3/5;
+                display: grid;
+                grid-template-columns: 50px 50px 50px 50px;
+                gap: 20px;
+                height: 50px;
+                div{
+                    position:relative;
+                    display: inline-block;
+                    text-align: end;
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    margin-right: 20px;
+                    filter: drop-shadow(0px 0px 10px rgb(44, 43, 44));
+                    border-radius: 8px;
+                
+                }
+                h4{
+                    position: absolute;
+                    top: 80%;
+                    left: 80%;
+                    transform: translate(-50%, -50%);
+                    background-color: #2a3249;
+                    padding-left: 4px;
+                    padding-right: 4px;
+                }
+                
+            }
+            .renata_banner_lol{
+                grid-column: 1/6;
+                height: 200px;
+                margin-bottom: 80px;
+                background-image: url(../img/lol/banner_renata.png);
+                align-self: center;
+                background-position: center;
+                background-size: cover;
+                margin-right: -10%;
+                margin-left: -10%;
+            
+            }
+            .renata_lol{
+                grid-column: 1/3;
+                grid-row: 2/6;
+                background-image: url(../img/lol/renata.png);
+                height: 800px;
+                align-items: center;
+                background-position: center;
+                background-size: cover;
+                margin: 25px;
+                filter: drop-shadow(0px 0px 10px rgb(170, 3, 170));
+                border-radius: 8px;
+            }
+            /* Champion 3 zeri */
+            .zeri_banner_lol{
+                grid-column: 1/6;
+                height: 200px;
+                margin-bottom: 80px;
+                background-image: url(../img/lol/banner_zeri.png);
+                align-self: center;
+                background-position: center;
+                background-size: cover;
+                margin-right: -10%;
+                margin-left: -10%;
+            
+            }
+            .zeri_lol{
+                grid-column: 1/3;
+                grid-row: 2/6;
+                background-image: url(../img/lol/zeri.png);
+                height: 800px;
+                align-items: center;
+                background-position: center;
+                background-size: cover;
+                margin: 25px;
+                filter: drop-shadow(0px 0px 10px rgb(8, 197, 103));
+                border-radius: 8px;
+            }
+        }
+    }
+
+}

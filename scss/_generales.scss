@@ -50,3 +50,137 @@ h1{
         color: white;
     }
 }
+main{
+    .contenedor_t_principal_disenio{
+        background-image: url(../img/diseñoback.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px;
+    }
+    .contenedor_t_principal_animacion{
+        background-image: url(../img/animacback.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px;
+    }
+    .contenedor_t_principal_dibujo{
+        background-image: url(../img/dibuback.png);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px;
+    }
+    .contenedor_t_principal_contacto{
+        background-image: url(../img/contactoback.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px;
+    }
+    .main_post{
+        background-color: #11151f98;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    div{
+        /* Diseño titulo pagina */
+        .titulo_principal{
+            font-size: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            -webkit-text-fill-color: #c2bcc5;
+            -webkit-text-stroke: 3px black;
+        }
+        .div_presentador{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-top: 10%;
+            padding-bottom: 5%;
+        }
+        .contenedor_post{
+            width: 60%;
+            margin: auto;
+            border-left-style: solid;
+            border-left-width: 10px;
+        
+        }
+        .div_imagen{
+            display: flex;
+            flex-direction: column;
+            max-width: fit-content;
+            margin: auto;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .video{
+            width: 720px; 
+            height: 500px;
+        }
+        .imagen_post{
+            width: 100%;
+            height: 40%;
+            max-width: fit-content;
+        }
+        .div_imagen2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5%;
+        }
+        .texto_adv{
+            font-size: 15px;
+            background-color: #c2bcc5;
+            color: black;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        
+        div{
+            .img_presentador{
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                margin-left: 6%;
+            }
+            .titulo_presentador{
+                background-color:#08090e98; ;
+                display: inline-block;
+                border-style: solid;
+                color: white;
+                border-radius: 25px;
+                padding: 25px;
+                h2{
+                    font-size: 35px;
+                }
+                h5,h6{
+                    font-size: 17px;
+                    display: inline-block;
+                }  
+                .new{
+                    color: white;
+                    background-color: green;
+                    border-radius: 8px;
+                    padding: 4px;
+                    font-size: 12px;
+                }
+                .texto_post{
+                    font-size: 25px;
+                    margin: 50px;
+                    color: rgb(216, 212, 212);
+                    border-radius: 25px;
+                    padding: 25px;
+                }
+                .div_cita{
+                    display: flex;
+                    margin: auto;
+                    width: 60%;
+                    background-color: #08090e98;
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 10px black;;
+                }
+            }
+        }
+    }
+}
+
