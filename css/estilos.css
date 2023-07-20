@@ -82,6 +82,85 @@ main .main_post {
   margin-left: 15%;
   margin-right: 15%;
 }
+main .main_post .div_presentador {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+main .main_post .div_presentador .img_presentador {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-left: 6%;
+}
+main .main_post .div_presentador .titulo_presentador {
+  background-color: rgba(8, 9, 14, 0.5960784314);
+  display: inline-block;
+  border-style: solid;
+  color: white;
+  border-radius: 25px;
+  padding: 25px;
+}
+main .main_post .div_presentador .titulo_presentador h2 {
+  font-size: 35px;
+}
+main .main_post .div_presentador .titulo_presentador h5, main .main_post .div_presentador .titulo_presentador h6 {
+  font-size: 17px;
+  display: inline-block;
+}
+main .main_post .div_presentador .titulo_presentador .new {
+  color: white;
+  background-color: green;
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 12px;
+}
+main .main_post .contenedor_post {
+  width: 60%;
+  margin: auto;
+  border-left-style: solid;
+  border-left-width: 10px;
+}
+main .main_post .contenedor_post .texto_post {
+  font-size: 25px;
+  margin: 50px;
+  padding-left: 10px;
+  color: rgb(216, 212, 212);
+  border-radius: 25px;
+  padding: 25px;
+}
+main .main_post .div_imagen {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+main .main_post .video {
+  width: 720px;
+  height: 500px;
+}
+main .main_post .imagen_post {
+  width: 100%;
+  height: 40%;
+  max-width: fit-content;
+}
+main .main_post .div_imagen2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+main .main_post .texto_adv {
+  font-size: 15px;
+  background-color: #c2bcc5;
+  color: black;
+  border-radius: 25px;
+  padding: 10px;
+}
 main div {
   /* Diseño titulo pagina */
 }
@@ -94,87 +173,10 @@ main div .titulo_principal {
   -webkit-text-fill-color: #c2bcc5;
   -webkit-text-stroke: 3px black;
 }
-main div .div_presentador {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding-top: 10%;
-  padding-bottom: 5%;
-}
-main div .contenedor_post {
-  width: 60%;
-  margin: auto;
-  border-left-style: solid;
-  border-left-width: 10px;
-}
-main div .div_imagen {
-  display: flex;
-  flex-direction: column;
-  max-width: fit-content;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-main div .video {
-  width: 720px;
-  height: 500px;
-}
-main div .imagen_post {
-  width: 100%;
-  height: 40%;
-  max-width: fit-content;
-}
-main div .div_imagen2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5%;
-}
-main div .texto_adv {
-  font-size: 15px;
-  background-color: #c2bcc5;
-  color: black;
-  border-radius: 25px;
-  padding: 10px;
-}
-main div div .img_presentador {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  margin-left: 6%;
-}
-main div div .titulo_presentador {
-  background-color: rgba(8, 9, 14, 0.5960784314);
-  display: inline-block;
-  border-style: solid;
-  color: white;
-  border-radius: 25px;
-  padding: 25px;
-}
-main div div .titulo_presentador h2 {
-  font-size: 35px;
-}
-main div div .titulo_presentador h5, main div div .titulo_presentador h6 {
-  font-size: 17px;
-  display: inline-block;
-}
-main div div .titulo_presentador .new {
-  color: white;
-  background-color: green;
-  border-radius: 8px;
-  padding: 4px;
-  font-size: 12px;
-}
-main div div .titulo_presentador .texto_post {
-  font-size: 25px;
-  margin: 50px;
-  color: rgb(216, 212, 212);
-  border-radius: 25px;
-  padding: 25px;
-}
-main div div .titulo_presentador .div_cita {
+main div .div_cita {
   display: flex;
   margin: auto;
+  padding: 3%;
   width: 60%;
   background-color: rgba(8, 9, 14, 0.5960784314);
   border-radius: 10px;
@@ -276,7 +278,7 @@ main .contenedor_luna {
   padding-bottom: 100px;
   background-attachment: fixed;
 }
-main div .quien_lormor {
+main div div .quien_lormor {
   background-color: rgb(0, 0, 0);
   width: 230px;
   padding: 15px;
@@ -286,12 +288,12 @@ main div .quien_lormor {
   font-family: "cuadrado";
   text-align: center;
 }
-main div .quien_lormor a {
+main div div .quien_lormor a {
   text-decoration: none;
   color: aliceblue;
   cursor: help;
 }
-main div .quien_lormor:hover {
+main div div .quien_lormor:hover {
   transform: scale(1.2);
   transition: 0.5s;
   cursor: help;
@@ -814,6 +816,36 @@ fieldset {
   main .main_post {
     margin-left: 0%;
     margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .main_post .div_presentador {
+    gap: 10px;
+  }
+  main .main_post .div_presentador .img_presentador {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  main .main_post .div_presentador .titulo_presentador h2 {
+    font-size: 20px;
+  }
+  main .main_post .div_presentador .titulo_presentador h5, main .main_post .div_presentador .titulo_presentador h6 {
+    font-size: 17px;
+    display: inline-block;
+  }
+  main .main_post .contenedor_post {
+    width: 90%;
+    margin: 0px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    align-items: center;
+  }
+  main .main_post .contenedor_post .texto_post {
+    font-size: 15px;
+    margin: 10px;
   }
   main section .grid_index {
     margin-top: 200px;
@@ -865,33 +897,7 @@ fieldset {
     -webkit-text-fill-color: #c2bcc5;
     -webkit-text-stroke: 3px black;
   }
-  main div .div_presentador {
-    gap: 10px;
-  }
-  main div .contenedor_post {
-    width: 90%;
-    margin: 0%;
-    border-left-style: solid;
-    border-left-width: 10px;
-  }
-  main div div .img_presentador {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin-left: 1%;
-  }
-  main div div .titulo_presentador h2 {
-    font-size: 20px;
-  }
-  main div div h5, main div div h6 {
-    font-size: 17px;
-    display: inline-block;
-  }
-  main div div .texto_post {
-    font-size: 15px;
-    margin: 10px;
-  }
-  main div div .video {
+  main div .div_imagen .video {
     width: 300px;
     height: 200px;
   }
