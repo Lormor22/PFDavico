@@ -1,18 +1,16 @@
 @media (max-width: 575px){
-    .main_post{
-        margin-left:0%;
-        margin-right: 0%;
-    }
+    
 
     /* Header */
 
     header{
-        .nav_cel{
-            display: block;
-        }
         .nav_pc{
             display: none;
         }
+        .nav_cel{
+            display: block;
+        }
+        
         .lormor_logo {
             h1{
                 margin: 0;
@@ -158,6 +156,10 @@
     /* MAIN */
 
     main{
+        .main_post{
+            margin-left:0%;
+            margin-right:0%;
+        }
         section{
             .grid_index{
                 margin-top: 200px;
@@ -274,139 +276,136 @@
 
 
 
-/* lol */
-body{
-    .div_banner{
-        display: none;
+    /* lol */
+    body{
+        .div_banner{
+            display: none;
+        }
     }
-}
+        .div_banner_cel{
+            display: block;
+            .lol_banner_cel{
+                margin-top: 10%;
+                margin-bottom: 20%;
+                text-align: center;
+                a{
+                    img{
+                            width: 125px;
+                            height: 125px;
+                            margin: 10px;
+                            border-radius: 60px;
+                    }
+                }
+            }
+        }
+    main{
+        div{
+            .div_lol{
+                margin-bottom: 100px;
+                .nombre_lol{
+                    grid-column: 4/6;
+                    grid-row: 2/3;
+                    z-index: 1;
+                    h2{
+                        font-size: 100px;
+                        -webkit-text-fill-color: #c2bcc5;
+                        -webkit-text-stroke: 3px rgba(0, 0, 0, 0.877);
+                    }
+                    h4{
+                        font-size: 13px;
+                    }
+                }
+                .texto_lol{
+                    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.877);
+                    padding: 10px;
+                    background-color: #000000c7;
+                    border-radius: 10px;
+                    z-index: 1;
+                }
+                .skills_lol{
+                    grid-column: 2/5;
+                }
+                /* Champion 1 #Thresh */
+                /* Champion 2 Renata */
+                /* Champion 3 zeri */
+                .thresh_banner_lol , .renata_banner_lol , .zeri_banner_lol , .viktor_banner_lol , .reksai_banner_lol, .aatrox_banner_lol{
+                    grid-column: 1/6;
+                    height: 200px;
+                    margin-right: 0%;
+                    margin-left: 0%;
+                }
+                .thresh_lol , .renata_lol , .zeri_lol , .viktor_lol , .reksai_lol, .aatrox_lol{
+                    grid-column: 1/5;
+                    grid-row: 2/5;
+                    height: 600px;
+                    z-index: 0;
+                }
+                .botones_guias{
+                    grid-column: 1/5;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-top: 40px;
+                    h3{
+                        margin-right: 0px;
+                        margin-left: 5px;
+                    }
+                    a{
+                        .opgg{
+                            width: 150px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
 
-header{
-    .div_banner_cel{
-        display: block;
-        .lol_banner_cel{
-            margin-top: 10%;
-            margin-bottom: 20%;
-            text-align: center;
+    }
+
+
+
+
+
+
+    /* footer celular*/
+    footer{
+        padding-top: 10px;
+        text-align: center;
+        height: 200px;
+        a{
+            color: aliceblue;
+            width: auto;
+            width: 10px;
+            height: 10px;
+        }
+        section{
+            h6{
+                font-size: 10px0;
+                text-align: center;
+                padding-bottom: 30px;
+                background-color: black;
+            }
             a{
                 img{
-                        width: 125px;
-                        height: 125px;
-                        margin: 10px;
-                        border-radius: 60px;
+                    width: 50px;
+                    height: 50px;
+                    display: block;
+                    display: inline-block;
                 }
             }
         }
-    }
-}
-main{
-    div{
-        .div_lol{
-            margin-bottom: 100px;
-        }
-        div{
-            .nombre_lol{
-                grid-column: 4/6;
-                grid-row: 2/3;
-                z-index: 1;
-                h2{
-                    font-size: 100px;
-                    -webkit-text-fill-color: #c2bcc5;
-                    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.877);
-                }
-                h4{
-                    font-size: 13px;
-                }
-            }
-            .texto_lol{
-                -webkit-text-stroke: 1px rgba(0, 0, 0, 0.877);
-                padding: 10px;
-                background-color: #000000c7;
-                border-radius: 10px;
-                z-index: 1;
-            }
-            .skills_lol{
-                grid-column: 2/5;
-            }
-            /* Champion 1 #Thresh */
-            /* Champion 2 Renata */
-            /* Champion 3 zeri */
-            .thresh_banner_lol , .renata_banner_lol , .zeri_banner_lol{
-                grid-column: 1/6;
-                height: 200px;
-                margin-right: 0%;
-                margin-left: 0%;
-            }
-            .thresh_lol , .renata_lol , .zeri_lol{
-                grid-column: 1/5;
-                grid-row: 2/5;
-                height: 600px;
-                z-index: 0;
-            }
-        }
-        .botones_guias{
-            grid-column: 1/5;
+        .footer_links{
             display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
             gap: 10px;
-            align-items: center;
-            margin-top: 40px;
-            h3{
-                margin-right: 0px;
-                margin-left: 5px;
-            }
             a{
-                .opgg{
-                    width: 150px;
-                    height: 60px;
-                }
+                margin: 50px;
             }
         }
     }
-
-}
-
-
-
-
-
-
-/* footer celular*/
-footer{
-    padding-top: 10px;
-    text-align: center;
-    height: 200px;
-    a{
-        color: aliceblue;
-        width: auto;
-        width: 10px;
-        height: 10px;
-    }
-    section{
-        h6{
-            font-size: 10px0;
-            text-align: center;
-            padding-bottom: 30px;
-            background-color: black;
-        }
-        a{
-            img{
-                width: 50px;
-                height: 50px;
-                display: block;
-                display: inline-block;
-            }
-        }
-    }
-    .footer_links{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5%;
-        gap: 10px;
-        a{
-            margin: 50px;
-        }
-    }
-}
 
 
 }
