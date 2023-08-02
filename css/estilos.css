@@ -710,13 +710,16 @@ fieldset {
   border: 1px solid #000000;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 480px) {
   /* Header */
   header .nav_pc {
     display: none;
   }
   header .nav_cel {
     display: block;
+  }
+  header h1 {
+    font-size: 35px;
   }
   header .lormor_logo h1 {
     margin: 0;
